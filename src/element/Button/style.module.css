@@ -1,0 +1,11 @@
+.buttonStyle {
+  display: block;
+  border: none;
+  background: var(--primary);
+  font-family: var(--primaryFont);
+  width: 100%;
+  font-size: 18px;
+  font-weight: 600;
+  color: #fff;
+  padding: 12px 0;
+}

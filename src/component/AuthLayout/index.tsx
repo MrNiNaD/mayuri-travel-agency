@@ -5,6 +5,7 @@ import Adv1 from "@/assets/images/adv1.jpg";
 import Adv2 from "@/assets/images/adv2.jpg";
 import Adv3 from "@/assets/images/adv3.jpg";
 import Image from "next/image";
+import Button from "@/element/Button";
 
 let count = 0;
 
@@ -51,6 +52,7 @@ const AuthLayout = () => {
       <div className={style.authLayoutOverlay}>
         <div className={style.authSection}>
           <h3>Login Form</h3>
+          <Button>LOGIN</Button>
         </div>
       </div>
     </section>
