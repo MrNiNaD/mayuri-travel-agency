@@ -1,7 +1,9 @@
-import Image from 'next/image'
+import { redirect } from 'next/navigation'
 
 export default function Home() {
+  redirect('/login')
+
   return (
-    <div>Ninad Loves Mayuri :)</div>
+    <div>Hello World</div>
   )
 }
