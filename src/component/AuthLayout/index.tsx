@@ -55,6 +55,7 @@ const AuthLayout = () => {
         <div className={style.authSection}>
           <h3>Login Form</h3>
           <Input
+            className={style.authInputStyle}
             id="login-email-input"
             placeholder="Email"
             icon={<UserIcon />}
