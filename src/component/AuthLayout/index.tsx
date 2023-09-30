@@ -48,6 +48,11 @@ const AuthLayout = () => {
         <Image src={Adv2} alt="auth-image" />
         <Image src={Adv3} alt="auth-image" />
       </div>
+      <div className={style.authLayoutOverlay}>
+        <div className={style.authSection}>
+          <h3>Login Form</h3>
+        </div>
+      </div>
     </section>
   );
 };
