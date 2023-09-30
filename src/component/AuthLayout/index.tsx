@@ -9,14 +9,14 @@ import Image from 'next/image';
 let count = 0
 
 const AuthLayout = () => {
-  const imgContainerRef = useRef(null);
+  const imgContainerRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     const callback = () => {
-      const imgContainer: any = imgContainerRef?.current;
+      const imgContainer = imgContainerRef?.current;
 
       if (imgContainer) {
-        const children = imgContainer?.childNodes;
+        const children: NodeListOf<ChildNode> = imgContainer?.childNodes;
   
         children.forEach((element: any) => {
           if (element) {
@@ -24,7 +24,7 @@ const AuthLayout = () => {
           }
         });
   
-        children[count].style.opacity = 1;
+        (children[count] as any).style.opacity = 1;
 
         console.log({
           length: children?.length,
