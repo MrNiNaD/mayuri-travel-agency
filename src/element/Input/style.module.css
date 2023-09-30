@@ -1,0 +1,37 @@
+.inputContainer {
+  position: relative;
+}
+
+.inputStyle {
+  width: 100%;
+  border: none;
+  box-sizing: border-box;
+  padding: 9px;
+  padding-left: 40px;
+  font-size: 16px;
+  font-family: var(--primaryFont);
+}
+
+.inputStyle::placeholder {
+  color: #000;
+}
+
+.inputStyle:focus {
+  outline: none;
+}
+
+.inputIconContainer {
+  position: absolute;
+  width: 35px;
+  height: 100%;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.inputIconContainer svg {
+  width: 22px;
+  height: 22px;
+}
