@@ -5,14 +5,10 @@ import Adv1 from "@/assets/images/adv1.jpg";
 import Adv2 from "@/assets/images/adv2.jpg";
 import Adv3 from "@/assets/images/adv3.jpg";
 import Image from "next/image";
-import Button from "@/element/Button";
-import Input from "@/element/Input";
-import { PasswordIcon, UserIcon } from "@/assets/svg/login.svg";
-import Link from "next/link";
 
 let count = 0;
 
-const AuthLayout = () => {
+const AuthLayout = ({ children }: { children: React.ReactNode }) => {
   const imgContainerRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
@@ -53,35 +49,7 @@ const AuthLayout = () => {
         <Image src={Adv3} alt="auth-image" />
       </div>
       <div className={style.authLayoutOverlay}>
-        <div className={style.authSection}>
-          <h3>Login Form</h3>
-          <Input
-            className={style.authInputStyle}
-            id="login-email-input"
-            placeholder="Email"
-            icon={<UserIcon />}
-            type="email"
-          />
-          <Input
-            className={style.authInputStyle}
-            id="login-password-input"
-            placeholder="Password"
-            icon={<PasswordIcon />}
-            type="password"
-          />
-          <Link className={style.forPasswordLink} href={"/login"}>
-            Forgot Password?
-          </Link>
-          <Button>LOGIN</Button>
-          <div className={style.signUpContainer}>
-            <span className={style.forPasswordLink}>
-              Don't have account?{" "}
-              <Link className={style.signUpLink} href={"/login"}>
-                Signup Now
-              </Link>
-            </span>
-          </div>
-        </div>
+        <div className={style.authSection}>{children}</div>
       </div>
     </section>
   );
