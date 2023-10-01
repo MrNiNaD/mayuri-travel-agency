@@ -8,6 +8,7 @@ import Image from "next/image";
 import Button from "@/element/Button";
 import Input from "@/element/Input";
 import { PasswordIcon, UserIcon } from "@/assets/svg/login.svg";
+import Link from "next/link";
 
 let count = 0;
 
@@ -68,7 +69,18 @@ const AuthLayout = () => {
             icon={<PasswordIcon />}
             type="password"
           />
+          <Link className={style.forPasswordLink} href={"/login"}>
+            Forgot Password?
+          </Link>
           <Button>LOGIN</Button>
+          <div className={style.signUpContainer}>
+            <span className={style.forPasswordLink}>
+              Don't have account?{" "}
+              <Link className={style.signUpLink} href={"/login"}>
+                Signup Now
+              </Link>
+            </span>
+          </div>
         </div>
       </div>
     </section>
