@@ -12,6 +12,10 @@
   font-family: var(--primaryFont);
 }
 
+.inputStyleNoIcon {
+  padding-left: 9px;
+}
+
 .inputStyle::placeholder {
   color: #000;
 }

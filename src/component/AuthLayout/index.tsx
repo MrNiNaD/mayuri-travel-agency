@@ -7,7 +7,7 @@ import Adv3 from "@/assets/images/adv3.jpg";
 import Image from "next/image";
 import Button from "@/element/Button";
 import Input from "@/element/Input";
-import { UserIcon } from "@/assets/svg/login.svg";
+import { PasswordIcon, UserIcon } from "@/assets/svg/login.svg";
 
 let count = 0;
 
@@ -59,6 +59,14 @@ const AuthLayout = () => {
             id="login-email-input"
             placeholder="Email"
             icon={<UserIcon />}
+            type="email"
+          />
+          <Input
+            className={style.authInputStyle}
+            id="login-password-input"
+            placeholder="Password"
+            icon={<PasswordIcon />}
+            type="password"
           />
           <Button>LOGIN</Button>
         </div>
