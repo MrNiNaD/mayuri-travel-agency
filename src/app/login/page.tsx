@@ -31,7 +31,7 @@ const Page = () => {
       <div className={style.signUpContainer}>
         <span className={style.forPasswordLink}>
           Don't have account?{" "}
-          <Link className={style.signUpLink} href={"/login"}>
+          <Link className={style.signUpLink} href={"/signup"}>
             Signup Now
           </Link>
         </span>
