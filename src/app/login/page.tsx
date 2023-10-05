@@ -24,7 +24,7 @@ const Page = () => {
         icon={<PasswordIcon />}
         type="password"
       />
-      <Link className={style.forPasswordLink} href={"/login"}>
+      <Link className={style.forPasswordLink} href={"/forgotpassword"}>
         Forgot Password?
       </Link>
       <Button>LOGIN</Button>
