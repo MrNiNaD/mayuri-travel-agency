@@ -13,7 +13,7 @@ const Page = () => {
   const onProceedClick = () => {
     console.log("clikec");
 
-    push("/forgotpassword/boom");
+    push("/emailsent");
   };
 
   return (
